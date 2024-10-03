@@ -10,6 +10,13 @@ public class Pilha {
 
     public Bloco pop() {
 
-        return  this.lista.removerElementoFim();
+        return this.lista.removerElementoFim();
+    
+    }
+
+    public Bloco topo() {
+
+        return this.lista.localizarBloco(0);
+
     }
 }
