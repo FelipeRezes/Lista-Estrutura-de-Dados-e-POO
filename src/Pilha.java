@@ -19,4 +19,18 @@ public class Pilha {
         return this.lista.localizarBloco(0);
 
     }
+
+    // QUESTÃO 5
+    public Fila filaEquivalente(){
+        Fila fila = new Fila();
+        Bloco blocoAux = lista.inicio;
+
+        while (blocoAux != null){
+            fila.push(blocoAux.valor);
+            blocoAux = blocoAux.prox;
+        }
+        return fila;
+    }
+
+
 }

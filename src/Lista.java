@@ -18,6 +18,18 @@ public class Lista {
         return novo;
     }
 
+    // QUESTÃO 8
+    public Bloco addElemento (int valor, int pos){
+        Bloco blocoNovo = localizarBloco(pos);
+        if(blocoNovo == null){
+            this.addElemento(1, false);
+            this.addElemento(valor, pos);
+        }else{
+           blocoNovo.valor = valor;
+        }
+        return blocoNovo;
+    }
+
     public Bloco removerElementoFim() {
 
         Bloco result = null;
@@ -49,6 +61,22 @@ public class Lista {
         }
 
         return result;
+    }
+
+    // QUESTÃO 17
+    public Bloco removerElemento (int pos){
+        if(pos < 0 || inicio == null){
+            return null;
+        }
+        Bloco blocoAlvo = localizarBloco(pos);
+        if(blocoAlvo == inicio){
+            inicio = inicio.prox;
+        }else{
+            Bloco blocoAnterior = localizarBloco(pos - 1);
+            blocoAnterior.prox = blocoAlvo.prox;
+        }
+        blocoAlvo.prox = null;
+        return blocoAlvo;
     }
 
     public boolean isVazia() {

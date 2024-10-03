@@ -8,9 +8,22 @@ public class Fila {
 
     }
 
+    // QUESTÃO 2
     public Bloco pop(){
 
         return this.lista.removerElementoInicio();
 
+    }
+
+    // QUESTÃO 6
+    public Pilha pilhaEquivalente(){
+        Pilha pilha = new Pilha();
+        Bloco blocoAux = lista.inicio;
+
+        while(blocoAux != null){
+            pilha.push(blocoAux.valor);
+            blocoAux = blocoAux.prox;
+        }
+        return pilha;
     }
 }
