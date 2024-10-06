@@ -1,16 +1,16 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Pilha pilha = new Pilha();
+        Lista lista = new Lista();
+        lista.addElemento(1, false);
+        lista.addElemento(2, false);
+        lista.addElemento(3, false);
+        lista.addElemento(4, false);
+        lista.addElemento(5, false);
 
-        pilha.lista.addElemento(10, true);
-        pilha.lista.addElemento(20, true);
-        pilha.lista.addElemento(0, true);
-        pilha.lista.addElemento(14, true);
+        Lista nova = lista.localizarMaior(2);
 
-        Bloco topo = pilha.topo();
-
-        System.out.println(topo.valor);
+        nova.printLista();
 
     }
 }

@@ -141,5 +141,45 @@ public class Lista {
         }
 
         return cont;
-    } 
+    }
+    //QUESTÃO 18:
+    public Lista localizarMaior(int valor) {
+
+        Bloco blocoAux = this.inicio;
+        Lista nova = new Lista();
+        while(blocoAux != null){
+            if(blocoAux.valor > valor){
+                nova.addElemento(blocoAux.valor, true);
+            }
+        blocoAux = blocoAux.prox;
+        } 
+        return nova;
+    }
+
+    public void printLista(){
+        Bloco blocoAux = this.inicio;
+        while (blocoAux != null) {
+            System.out.println(blocoAux.valor);
+            blocoAux = blocoAux.prox;
+        }
+    }
+
+    // QUESTÃO 7:
+    public Lista inverter(){
+
+        int tamanho = this.tamanho();
+        Lista aux = new Lista();
+        for(int i = tamanho; i>0; i--){
+            int valor = this.localizarBloco(i).valor;
+            aux.addElemento(valor,false);
+        }
+
+        return aux;
+    }
+
+    //QUESTÃO 14:
+    public void removeDuplicados(){
+        Bloco blocoAux = this.inicio;
+        
+    }
 }
