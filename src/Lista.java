@@ -101,6 +101,14 @@ public class Lista {
         return aux;
     }
 
+    public void imprimir() {
+        Bloco aux = this.inicio;
+        while(aux!= null) {
+            System.out.print(aux.valor + " -> ");
+            aux = aux.prox;
+        }
+    }
+
     public int tamanho() {
 
         Bloco aux = this.inicio;

@@ -2,9 +2,9 @@ public class Fila {
     
     Lista lista = new Lista();
 
-    public void push(int valor){
+    public Bloco push(int valor){
 
-        this.lista.addElemento(valor, false);
+        return this.lista.addElemento(valor, false);
 
     }
 
@@ -12,5 +12,11 @@ public class Fila {
 
         return this.lista.removerElementoInicio();
 
+    }
+
+    public void print(){
+
+        this.lista.imprimir();
+        
     }
 }
