@@ -1,6 +1,5 @@
 public class Bloco {
-    
-    int valor;
-    Bloco prox;
-    
+    public int valor;
+    public Bloco prox;
+    public Bloco ant;
 }
