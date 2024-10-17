@@ -178,8 +178,45 @@ public class Lista {
     }
 
     //QUESTÃO 14:
-    public void removeDuplicados(){
-        Bloco blocoAux = this.inicio;
-        
+    public void removerDuplicados(){
+
+        Bloco blocoAtual = this.inicio;
+        while(blocoAtual != null){
+            Bloco blocoAux = blocoAtual;
+            while(blocoAux.prox != null){
+                if(blocoAtual.valor == blocoAux.prox.valor){
+                    blocoAux.prox = blocoAux.prox.prox;
+                }else{
+                    blocoAux = blocoAux.prox;
+                }
+        }
+            blocoAtual = blocoAtual.prox;
+        }
     }
+
+    //QUESTÃO 13 NÃO TESTADA
+    public Lista concatena(Lista lista){
+
+        Lista listaconcatenada = new Lista();
+        listaconcatenada.inicio = this.inicio;
+        Bloco ultimo = listaconcatenada.localizarBloco(this.tamanho());
+        ultimo.prox = lista.inicio;
+        
+        return listaconcatenada;
+    }
+
+    //QUESTÃO 15 NÃO TESTADA
+    public Lista clone(Lista lista){
+
+        Lista clone = new Lista();
+        Bloco aux = this.inicio;
+        while(aux.prox != null){
+            clone.addElementoFim(aux.valor);
+            aux = aux.prox;
+        }
+
+        return clone;
+    }
+
+
 }

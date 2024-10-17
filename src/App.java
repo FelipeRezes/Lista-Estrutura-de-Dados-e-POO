@@ -3,14 +3,14 @@ public class App {
         
         Lista lista = new Lista();
         lista.addElemento(1, false);
-        lista.addElemento(2, false);
         lista.addElemento(3, false);
-        lista.addElemento(4, false);
+        lista.addElemento(3, false);
+        lista.addElemento(3, false);
         lista.addElemento(5, false);
 
-        Lista nova = lista.localizarMaior(2);
+        lista.removerDuplicados();
 
-        nova.printLista();
+        lista.printLista();
 
     }
 }

@@ -5,13 +5,10 @@ Questões pendentes:
     12. Utilize uma das estruturas para resolver o seguinte problema de soma:
     ((1+3)*(3+4))+7)/35. Esse problema pode ser modelado assim: 1 3 + 3 4 + * 7 + 35 /.
 
-    13. Implemente o método “concatena(Lista l2)” na classe Lista. O método deve concatenar
-    os elementos da lista atual com os elementos da lista passada como parâmetro,
-    retornando uma nova lista.
-
     14. Implemente um método “removeDuplicados” na classe Lista. Esse método deve
     percorrer a lista e remover todos os elementos duplicados, mantendo apenas a primeira
     ocorrência
+<<<<<<< HEAD
     
     15. Crie um método “clone” na classe Lista. Esse método deve retornar uma nova instância
     de Lista com os mesmos elementos da lista original.
@@ -22,6 +19,8 @@ Questões pendentes:
 
     19. Implemente um jogo de baralho com dois decks, um para cartas jogador. O jogador
     vencedor é o que retira as 5 primeiras cartas com a maior soma.
+=======
+>>>>>>> 99fc18d217f58fe8cea26f1eb48c3648685e4764
 
 =======
 >>>>>>> 99fc18d (Update README.md)
