@@ -1,28 +1,12 @@
 Questões pendentes:
+
     10. Implemente a Lista com array ao invés de uma lista encadeada. No array, blocos
     também serão adicionados.
 
     12. Utilize uma das estruturas para resolver o seguinte problema de soma:
     ((1+3)*(3+4))+7)/35. Esse problema pode ser modelado assim: 1 3 + 3 4 + * 7 + 35 /.
 
-    14. Implemente um método “removeDuplicados” na classe Lista. Esse método deve
-    percorrer a lista e remover todos os elementos duplicados, mantendo apenas a primeira
-    ocorrência
-<<<<<<< HEAD
-    
-    15. Crie um método “clone” na classe Lista. Esse método deve retornar uma nova instância
-    de Lista com os mesmos elementos da lista original.
-
-<<<<<<< HEAD
-    16. Implemente a classe FilaPrioridade. os elementos serão retirados com base em sua
-    prioridade (maior prioridade sai primeiro).
-
-    19. Implemente um jogo de baralho com dois decks, um para cartas jogador. O jogador
-    vencedor é o que retira as 5 primeiras cartas com a maior soma.
-=======
->>>>>>> 99fc18d217f58fe8cea26f1eb48c3648685e4764
-
-=======
->>>>>>> 99fc18d (Update README.md)
     20. Tipicamente os jogos da velha são implementados através de matrizes, porém o desafio
     aqui é implementar utilizando uma única lista.
+
+    22. Para complementar a questão 21, implemente uma solução para o cadastro das notas dos alunos. Lembre-se, sempre que houver a necessidade de uso de lista, utilize a classe Lista que vem sendo desenvolvida até então.
