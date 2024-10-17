@@ -10,8 +10,8 @@ public class FilaPrioridade{
 
     public Bloco pop() {
 
-        prioridade = this.prioridade();
-        this.lista.removerElemento(prioridade);
+        int prioridade = this.prioridade();
+        return this.lista.removerElemento(prioridade);
 
     }
     
@@ -20,15 +20,18 @@ public class FilaPrioridade{
         
         Bloco aux = this.lista.inicio;
         Bloco maiorPrioridade = aux;
+        int posicaoMaior, posicaoAtual = 1;
 
         while(aux.prox != null){
             if (maiorPrioridade.prioridade < aux.prioridade){
                 maiorPrioridade = aux;
+                posicaoMaior = posicaoAtual;
             }
             aux = aux.prox;
+            posicaoAtual++;
         }
 
-        return this.localizarBloco(maiorPrioridade.valor);        
+        return this.lista.localizarBloco(posicaoMaior).valor;
 
     }
 
