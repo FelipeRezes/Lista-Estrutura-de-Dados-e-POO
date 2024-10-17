@@ -20,7 +20,8 @@ public class FilaPrioridade{
         
         Bloco aux = this.lista.inicio;
         Bloco maiorPrioridade = aux;
-        int posicaoMaior, posicaoAtual = 1;
+        int posicaoMaior;
+        int posicaoAtual = 1;
 
         while(aux.prox != null){
             if (maiorPrioridade.prioridade < aux.prioridade){
