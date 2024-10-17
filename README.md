@@ -9,9 +9,5 @@ Questões pendentes:
     percorrer a lista e remover todos os elementos duplicados, mantendo apenas a primeira
     ocorrência
 
-
-    19. Implemente um jogo de baralho com dois decks, um para cartas jogador. O jogador
-    vencedor é o que retira as 5 primeiras cartas com a maior soma.
-
     20. Tipicamente os jogos da velha são implementados através de matrizes, porém o desafio
     aqui é implementar utilizando uma única lista.
