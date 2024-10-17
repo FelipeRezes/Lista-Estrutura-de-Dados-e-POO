@@ -179,6 +179,7 @@ public class Lista {
 
     //QUESTÃO 14:
     public void removeDuplicados(){
+
         Bloco blocoAux = this.inicio;
         
     }
@@ -197,7 +198,7 @@ public class Lista {
     //QUESTÃO 15 NÃO TESTADA
     public Lista clone(Lista lista){
 
-        Lista clone = new Lista()
+        Lista clone = new Lista();
         Bloco aux = this.inicio;
         while(aux.prox != null){
             clone.addElementoFim(aux.valor);
