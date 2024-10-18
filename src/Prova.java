@@ -1,6 +1,18 @@
 public class Prova {
     
-    public Lista notas = new Lista();
-    public int id;
+    public int codigoProva;
+    public Aluno identificadorAluno;
+    public Nota nota;
+    public Turma identificadorTurma;
+
+    public Prova(int codigoProva, Aluno identificadorAluno, Nota nota, Turma identificadorTurma) {
+
+        this.codigoProva = codigoProva;
+        this.identificadorAluno = identificadorAluno;
+        this.identificadorTurma = identificadorTurma;
+        this.nota = nota;
+
+    }
+
 
 }

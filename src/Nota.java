@@ -1,15 +1,13 @@
 public class Nota{
 
-    public Turma turma = new Turma();
+    public float nota;
 
-    public float Notas;
-    
-
-    public float cadastoNotas{
-
+    public Nota(float nota) {
+        this.nota = nota;
     }
 
-
-
+    public double settarMedia(Nota nota1, Nota nota2, Nota nota3) {
+        return (nota1.nota + nota2.nota + nota3.nota)/3;
+    }
 
 }

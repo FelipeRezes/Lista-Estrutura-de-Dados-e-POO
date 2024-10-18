@@ -1,9 +1,15 @@
+import java.util.List;
+
 public class Turma{
 
-    //Questão 21
-    public ListaAluno aluno = new ListaAluno();
-    public Disciplina disciplina = new Disciplina();
-    public Nota nota = new Nota();
-    public Prova prova = new Prova();
     public int codigo;
+    public ListaAluno alunos;
+    public Disciplina disciplina;
+    public List<Prova> provas;
+
+    public Turma (int codigo, ListaAluno alunos, Disciplina disciplina) {
+        this.codigo = codigo;
+        this.alunos = alunos;
+        this.disciplina = disciplina;
+    }
 }
