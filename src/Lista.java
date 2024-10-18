@@ -218,5 +218,20 @@ public class Lista {
         return clone;
     }
 
+    //Questão 12
+    public void listaEquação () {
 
+        Lista listaEquação = new Lista();
+        listaEquação.addElemento(1, false);
+        listaEquação.addElemento(3, false);
+        listaEquação.addElemento(4, false);
+        listaEquação.addElemento(7, false);
+        listaEquação.addElemento(35, false);
+
+        
+        listaEquação.printLista();
+        int result = ((listaEquação.localizarBloco(1).valor + listaEquação.localizarBloco(2).valor) * (listaEquação.localizarBloco(2).valor + listaEquação.localizarBloco(3).valor) + listaEquação.localizarBloco(4).valor/listaEquação.localizarBloco(5).valor);
+        System.out.println("Resultado = " + result);
+
+    }
 }
