@@ -87,7 +87,7 @@ public class ListaDuplamenteEncadeada {
         return this.inicio == null;
     }
 
-    public void mostrarLista() {
+    public void printLista() {
         Bloco blocoAux = this.inicio;
         while (blocoAux != null) {
             System.out.println(blocoAux.valor);
