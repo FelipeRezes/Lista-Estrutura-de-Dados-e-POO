@@ -13,7 +13,7 @@ public class ListaDuplamenteEncadeadaHeadTail {
         }
     }
 
-    public Bloco addBlocoHeadTailInicio (int valor) {
+    private Bloco addBlocoHeadTailInicio (int valor) {
         Bloco novo = new Bloco();
         novo.valor = valor;
 
@@ -32,7 +32,7 @@ public class ListaDuplamenteEncadeadaHeadTail {
         return novo;
     }
 
-    public Bloco addBlocoHeadTailFim (int valor) {
+    private Bloco addBlocoHeadTailFim (int valor) {
 
         if (this.header == null) {
             return addBlocoHeadTailInicio(valor);
@@ -187,6 +187,6 @@ public class ListaDuplamenteEncadeadaHeadTail {
         }
 
         return valorMenor;
-        
+
     }
 }
