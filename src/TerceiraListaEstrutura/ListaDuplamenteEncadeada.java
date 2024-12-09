@@ -50,6 +50,27 @@ public class ListaDuplamenteEncadeada {
    
     }
     
+    public Bloco removerBloco (Bloco refBloco) {
+        if (isVazia()) {
+            return null;
+        }
+
+        if (refBloco == this.inicio) {
+            this.inicio = null;
+            return refBloco;
+        }
+
+        Bloco aux = this.inicio;
+
+        while (aux != null && aux.prox != refBloco) {
+            aux = aux.prox;
+        }
+
+        aux.prox = null;
+
+        return refBloco;
+    }
+
     public Bloco localizarValor(int valor) {
         Bloco aux = this.inicio;
         
